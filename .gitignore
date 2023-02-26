@@ -1,6 +1,9 @@
 ### custom ignores here
-Images/*
-images.npy
+weights/*.pth
+Images/personal/
+Output/*.png
+*.npy
+todo
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

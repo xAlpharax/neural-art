@@ -24,7 +24,7 @@ def render(index):
 
     plt.axis('off')
     plt.imshow(image_array[index])
-    plt.savefig(name, dpi=258, bbox_inches='tight', pad_inches=0) # dpi 258 -> 720p ; dpi 387 -> 1080p output image resolution
+    plt.savefig(name, bbox_inches='tight', pad_inches=0) # dpi 258 -> 720p ; dpi 387 -> 1080p output image resolution
     plt.close('all')
 
 for index in range(0, len(image_array)):
