@@ -147,7 +147,7 @@ prep = transforms.Compose([transforms.Resize(img_size),
                            ])
 
 # POST-PROCESSING A
-postpa = transforms.Compose([transforms.Lambda(lambda x: x.mul_(1./255)),
+postpa = transforms.Compose([transforms.Lambda(lambda x: x.mul_(1./255)), # REVERT EVERYTHING DONE IN THE PRE-PROCESSING STEP
                             transforms.Normalize(mean = [-0.40760392, -0.45795686, -0.48501961], std = [1, 1, 1]),
                             transforms.Lambda(lambda x: x[torch.LongTensor([2,1,0])])
                             ])
@@ -234,7 +234,7 @@ targets = style_targets + content_targets
 import numpy as np
 from tqdm import tqdm
 
-vis_factor = 3
+vis_factor = 5
 max_iter = 600 * vis_factor
 show_iter = 1 * vis_factor
 
