@@ -17,6 +17,7 @@ if len(sys.argv) == 1:
 
 ### image rendering from raw data
 
+import matplotlib as mlp ; mlp.use('agg') ;
 import matplotlib.pyplot as plt
 
 dpi = 258 # dpi 258 -> 720p ; dpi 387 -> 1080p output image resolution

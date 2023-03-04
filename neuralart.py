@@ -243,7 +243,7 @@ n_iter = [0]
 
 image_array = []
 
-with tqdm(total=max_iter) as pbar:
+with tqdm(total=max_iter, miniters=0, smoothing=0) as pbar:
     while n_iter[0] <= max_iter - 9: # weird behavior here
 
         def closure():
