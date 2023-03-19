@@ -20,15 +20,15 @@ if [ $# -eq 1 ] ; then
     exit 1
 fi
 
-./clear_dir.sh # of now useless files
+./clear_dir.sh # clear past checkpoint/realtime files
 
 # stylize data [pair (style, content)]
 python neuralart.py $1 $2
 
-# render images (actual frames) from (an) images.npy
+# render each image (actual frames) as per images.npy data
 python renderer.py
 
-# fix render artifacts
+# fix weird render artifacts
 python renderer.py --fix
 
 # wrap everything into a video

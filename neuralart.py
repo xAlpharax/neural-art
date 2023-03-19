@@ -1,6 +1,6 @@
 #!/bin/python
 
-### imports (will come with a requirements.txt)
+### imports (should be covered by requirements.txt)
 
 from torch.autograd import Variable
 from torchvision import transforms
@@ -234,7 +234,7 @@ targets = style_targets + content_targets
 import numpy as np
 from tqdm import tqdm
 
-vis_factor = 5
+vis_factor = 10
 max_iter = 600 * vis_factor
 show_iter = 1 * vis_factor
 
