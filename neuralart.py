@@ -27,6 +27,16 @@ from PIL import Image
 model_path = 'weights/vgg_conv_weights.pth'
 image_path = '' # root (neural-art) directory
 
+### userland testing for multiple instances, a big nono currently
+
+n_instances = os.popen('ps aux | grep "python neuralart.py" | wc -l').read()
+if int(n_instances) > 3: print("Woah, running 2 or more instances of neural-art at the same time?\nThis is an experimental feature as of now... try it later favorably :3")
+
+### check if there are any weights to use, if not, download the default provided ones
+if int(os.popen('ls -l weights | wc -l').read()) == 1: os.system('wget -O "weights/vgg_conv_weights.pth" "https://m1.afileditch.ch/ajjMsHrRhnikrrCiUXgY.pth"')
+
+### Defining neural architecture
+
 ### VGG was trained on IMAGENET
 ### although old at this point
 ### it still achieves good results
@@ -63,6 +73,7 @@ class VGG(nn.Module):
             self.pool3 = nn.MaxPool2d(kernel_size = 2, stride = 2)
             self.pool4 = nn.MaxPool2d(kernel_size = 2, stride = 2)
             self.pool5 = nn.MaxPool2d(kernel_size = 2, stride = 2)
+
         elif pool == 'avg':
             self.pool1 = nn.AvgPool2d(kernel_size = 2, stride = 2)
             self.pool2 = nn.AvgPool2d(kernel_size = 2, stride = 2)
@@ -98,7 +109,6 @@ class VGG(nn.Module):
         out['r53'] = F.relu(self.conv5_3(out['r52']))
         out['r54'] = F.relu(self.conv5_4(out['r53']))
         out['p5'] = self.pool5(out['r54'])
-
 
         # RETURN DESIRED ACTIVATIONS
         return [out[key] for key in out_keys]
@@ -200,7 +210,7 @@ style_img, content_img = imgs_torch
 # CAN BE INITIALIZED RANDOMLY
 # OR AS A CLONE OF CONTENT IMAGE
 opt_img = Variable(content_img.clone(), requires_grad = True)
-print("Content size:", content_img.size())
+print("Content size:", content_img.size(), sys.argv[2], "in", sys.argv[1])
 print("Target size:", opt_img.size(), end="\n\n")
 
 

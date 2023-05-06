@@ -31,5 +31,5 @@ python renderer.py
 # fix weird render artifacts
 python renderer.py --fix
 
-# wrap everything into a video
-ffmpeg -framerate 60 -pattern_type glob -i 'Output/neural_art_*.png' -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $(basename ${2%.*})'_in_'$(basename ${1%.*})'.mp4'
+# wrap everything into a video (automatically overrides)
+ffmpeg -y -framerate 60 -pattern_type glob -i 'Output/neural_art_*.png' -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $(basename ${2%.*})'_in_'$(basename ${1%.*})'.mp4'
