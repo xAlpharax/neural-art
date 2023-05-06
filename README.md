@@ -6,7 +6,7 @@ Weights can be downloaded from [here](https://m1.afileditch.ch/ajjMsHrRhnikrrCiU
 
 ### Why use this in 2023 ?
 
-Because style transfer hasn't changed drastically in terms of actual results in the past years. I personally find a certain beauty in inputting a style and content image rather than a well curated prompt with a dozen of switches. Consider this repo as a quick *just works* solution that can run on both CPU and GPU effectively.
+Because Style Transfer hasn't changed drastically in terms of actual results in the past years. I personally find a certain beauty in inputting a style and content image rather than a well curated prompt with a dozen of switches. Consider this repo as a quick ***just works*** solution that can run on either CPU or GPU effectively.
 
 ## Usage
 
@@ -23,7 +23,6 @@ A helper script is also available to run `./stylize.sh` for each distinct pair o
 ```
 
 If, at any point, curious of the individual frames that comprise the generated `./content_in_style.mp4` check `./Output/`
-
 There's also a (redundant) `./images.npy` file that contains raw array data. `./clear_dir.sh` removes redundant files each time they're no longer needed.
 
 ### Requirements
