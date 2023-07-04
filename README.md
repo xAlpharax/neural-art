@@ -28,7 +28,7 @@ virtualenv path/to/neural-art
 source path/to/neural-art/bin/activate
 ```
 
-! When you're finished with the environment:
+(!) When you're finished with the environment:
 
 ```bash
 # deactivate
@@ -68,6 +68,4 @@ Considering this workflow, `./clear_dir.sh` removes temporary files each time a 
 
 Any sort of help, especially regarding the QoS of the project, is appreciated. Feel free to open an issue in the **Issues** tab and discuss the possible changes there. As of now, *neural-art* would be in great need of a clean and friendly arguments handler (i.e. like the ones the `argparse` python package provides) in order to provide a cleaner interface for working with `./neuralart.py` and/or `./stylize.sh`.
 
-Thank you.
-
-Happy neural-art-ing !
+Thank you. Happy neural-art-ing !
