@@ -25,7 +25,7 @@ from PIL import Image
 ### path definitions
 
 model_path = 'weights/vgg_conv_weights.pth'
-image_path = '' # root (neural-art) directory
+image_path = '' # by default use neural-art as relative dir
 
 ### userland testing for multiple instances, a big nono currently
 

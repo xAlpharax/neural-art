@@ -2,6 +2,8 @@
 
 set -e ### exit the script if any part of it fails
 
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
 cwd=$(pwd | sed -r 's%.*/%%g')
 if [ $cwd != "neural-art" ] ; then
     echo "You must be in the 'neural-art' directory when you run this"
