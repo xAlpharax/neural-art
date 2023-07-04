@@ -56,7 +56,7 @@ A helper script is also available to run `./stylize.sh` for each distinct pair o
 
 Moreover, `./all.sh` is aware of the already rendered mp4 files and will skip stylizing the combinations that are already present.
 
-### Output videos/images and temporary files
+### Output videos / images and temporary files
 
 If, at any point, curious of the individual frames that comprise the generated `./content_in_style.mp4` check `./Output/` for PNG images with exactly that. Keep in mind that these files get removed and overwritten each time ./stylize.sh is called ( this is also why running multiple instances of `./stylize.sh` is advised against; if you need to batch/automate the process, try `./all.sh`)
 
