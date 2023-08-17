@@ -33,7 +33,7 @@ n_instances = os.popen('ps aux | grep "python neuralart.py" | wc -l').read()
 if int(n_instances) > 3: print("Woah, running 2 or more instances of neural-art at the same time?\nThis is an experimental feature as of now... try it later favorably :3")
 
 ### check if there are any weights to use, if not, download the default provided ones
-if int(os.popen('ls -l weights | wc -l').read()) == 1: os.system('wget -O "weights/vgg_conv_weights.pth" "https://m1.afileditch.ch/ajjMsHrRhnikrrCiUXgY.pth"')
+#if int(os.popen('ls -l weights | wc -l').read()) == 1: os.system('wget -O "weights/vgg_conv_weights.pth" "https://m1.afileditch.ch/ajjMsHrRhnikrrCiUXgY.pth"')
 
 ### Defining neural architecture
 
