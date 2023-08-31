@@ -2,7 +2,7 @@
 
 Neural Style Transfer done from the CLI using a VGG backbone and presented as an MP4.
 
-Weights can be downloaded from [here](https://drive.google.com/file/d/1Pfh-dHvCdhn97MpLT0_I6QAAzvejqs1i/). The downloaded file should be placed in `./weights/` and any file will be ignored from there when pushing, as seen in `./.gitignore`. Update: Alternatively, if the `./weights/` directory is empty, `./neuralart.py` will automatically download publicly available VGG19 weights for the user.
+Weights can be downloaded from [here](https://files.catbox.moe/wcao20.pth). The downloaded file (renamed to `vgg_conv_weights.pth`) should be placed in `./weights/` and it will be ignored when pushing, as seen in `./.gitignore`. Update: Alternatively, if the `./weights/` directory is empty, `./neuralart.py` will automatically download publicly available VGG19 weights for the user.
 
 More in depth information about Neural Style Transfer ( NST ) can be found in this great [paper](https://arxiv.org/abs/1705.04058). Make sure to check [Requirements](#requirements) and [Usage](#usage).
 
