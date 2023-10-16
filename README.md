@@ -72,7 +72,11 @@ https://github.com/xAlpharax/neural-art/assets/42233094/ef7e5fa8-203d-48a7-92da-
 
 https://github.com/xAlpharax/neural-art/assets/42233094/38313363-a8d9-4496-b596-34e56d444642
 
+https://github.com/xAlpharax/neural-art/assets/42233094/59b7f348-d599-432e-bbd9-b613b114a4ac
+
 https://github.com/xAlpharax/neural-art/assets/42233094/c46b326c-7b96-4ef4-b6fd-dbfcb7a3572f
+
+https://github.com/xAlpharax/neural-art/assets/42233094/216b9e44-b563-42f7-9d66-f1d48bb3493a
 
 https://github.com/xAlpharax/neural-art/assets/42233094/981f2855-2524-4c83-87f4-beac6ff5cfa6
 
