@@ -68,21 +68,43 @@ Considering this workflow, `./clear_dir.sh` removes temporary files each time a 
 
 <details>
 
+[//]: # (Bunnies in Monet)
+
 https://github.com/xAlpharax/neural-art/assets/42233094/0094a10b-e452-4284-b0d6-08df471d1848
+
+[//]: # (Bunnies in Azzalee)
 
 https://github.com/xAlpharax/neural-art/assets/42233094/ef7e5fa8-203d-48a7-92da-7f462cb17601
 
+[//]: # (Bunnies in Starry Night)
+
 https://github.com/xAlpharax/neural-art/assets/42233094/bdfc854e-cb01-4398-9dbd-c8fa34e99310
+
+[//]: # (Azzalee in Monet)
 
 https://github.com/xAlpharax/neural-art/assets/42233094/38313363-a8d9-4496-b596-34e56d444642
 
+[//]: # (Monet in Azalee)
+
 https://github.com/xAlpharax/neural-art/assets/42233094/59b7f348-d599-432e-bbd9-b613b114a4ac
+
+[//]: # (Starry Night in Azzalee)
 
 https://github.com/xAlpharax/neural-art/assets/42233094/7993f61f-b5ed-49a7-8167-10b266cbf591
 
+[//]: # (Azzalee in Starry Night)
+
 https://github.com/xAlpharax/neural-art/assets/42233094/c46b326c-7b96-4ef4-b6fd-dbfcb7a3572f
 
+[//]: # (Jitter Doll in Starry Night)
+
 https://github.com/xAlpharax/neural-art/assets/42233094/216b9e44-b563-42f7-9d66-f1d48bb3493a
+
+[//]: # (Starry Night in Jitter Doll)
+
+https://github.com/xAlpharax/neural-art/assets/42233094/c6c4f4d1-f00e-4388-b726-5f6358cb5bc8
+
+[//]: # (Cute in Jitter Doll a.k.a. how my profile pic was generated) 
 
 https://github.com/xAlpharax/neural-art/assets/42233094/981f2855-2524-4c83-87f4-beac6ff5cfa6
 
