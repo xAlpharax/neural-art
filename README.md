@@ -104,7 +104,7 @@ https://github.com/xAlpharax/neural-art/assets/42233094/216b9e44-b563-42f7-9d66-
 
 https://github.com/xAlpharax/neural-art/assets/42233094/c6c4f4d1-f00e-4388-b726-5f6358cb5bc8
 
-[//]: # (Cute in Jitter Doll a.k.a. how my profile pic was generated) 
+[//]: # (Cute in Jitter Doll a.k.a. how my profile pic was generated)
 
 https://github.com/xAlpharax/neural-art/assets/42233094/981f2855-2524-4c83-87f4-beac6ff5cfa6
 

@@ -4,7 +4,7 @@
 
 import numpy as np
 
-# will need some added functionality there for *.npy
+# TODO: will need some added functionality there for *.npy
 image_array = np.load("images.npy")
 
 ### progress bar
