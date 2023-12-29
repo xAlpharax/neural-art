@@ -4,7 +4,7 @@
 
 import numpy as np
 
-# TODO: will need some added functionality there for *.npy
+# TODO: will need some added functionality there for per-instance *.npy
 image_array = np.load("images.npy")
 
 ### progress bar
@@ -45,7 +45,7 @@ if len(sys.argv) == 1:
     exit()
 
 if sys.argv[1] == "--fix":
-    for index in range(0, 32):
+    for index in range(0, 64):
         ### some artifacts may have slipped
         ### because of the thread pool
         name = 'Output/neural_art_{:04d}.png'.format(index + 1)

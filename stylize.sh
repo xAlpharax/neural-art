@@ -33,7 +33,9 @@ python renderer.py
 # fix weird render artifacts
 python renderer.py --fix
 
-# wrap everything into a video (automatically overrides)
-ffmpeg -y -framerate 60 -pattern_type glob -i 'Output/neural_art_*.png' -c:v libx264 -pix_fmt yuv420p -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $(basename ${2%.*})'_in_'$(basename ${1%.*})'.mp4' # H.264 all around
+# wrap everything into a video (automatically overrides existing filenames)
+#ffmpeg -y -framerate 60 -pattern_type glob -i 'Output/neural_art_*.png' -c:v libx264 -pix_fmt yuv420p -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $(basename ${2%.*})'_in_'$(basename ${1%.*})'.mp4' # H.264 all around
 #ffmpeg -y -framerate 60 -pattern_type glob -i 'Output/neural_art_*.png' -c:v libsvtav1 -pix_fmt yuv420p  -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $(basename ${2%.*})'_in_'$(basename ${1%.*})'.mp4' # AV1 weirddd
-#ffmpeg -y -framerate 60 -pattern_type glob -i 'Output/neural_art_*.png' -c:v libvpx-vp9 -pix_fmt yuv420p -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $(basename ${2%.*})'_in_'$(basename ${1%.*})'.mp4' # VP9 quality
+ffmpeg -y -framerate 60 -pattern_type glob -i 'Output/neural_art_*.png' -c:v libvpx-vp9 -pix_fmt yuv420p -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $(basename ${2%.*})'_in_'$(basename ${1%.*})'.mp4' # VP9 quality
+
+# try -crf 10 (sane for vp9)

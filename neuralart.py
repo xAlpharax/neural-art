@@ -29,11 +29,11 @@ image_path = '' # by default use neural-art as relative dir
 
 ### userland testing for multiple instances, a big nono currently
 
-n_instances = os.popen('ps aux | grep "python neuralart.py" | wc -l').read()
+n_instances = os.popen('ps aux | grep "python neuralart.py" | wc -l').read() # TODO: add windows commands for platform compatibility :p for the 3 people who need this warning
 if int(n_instances) > 3: print("Woah, running 2 or more instances of neural-art at the same time?\nThis is an experimental feature as of now... try it later :3")
 
 ### check if there are any weights to use, if not, download the default provided ones
-if int(os.popen('ls -l weights | wc -l').read()) == 1: os.system(f'curl https://files.catbox.moe/wcao20.pth --output {model_path}')
+if int(os.popen('ls -l weights | wc -l').read()) == 1: os.system(f'curl https://files.catbox.moe/wcao20.pth --output {model_path}') # TODO: win commands here as well
 
 ### Defining neural architecture
 
@@ -244,7 +244,7 @@ targets = style_targets + content_targets
 import numpy as np
 from tqdm import tqdm
 
-vis_factor = 10
+vis_factor = 10 # every 10 iterations, a frame snapshot is saved, we use this coeficient to scale
 max_iter = 600 * vis_factor
 show_iter = 1 * vis_factor
 

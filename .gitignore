@@ -3,6 +3,7 @@ weights/*.pth
 Output/*.png
 *.npy
 *.mp4
+*.zip
 todo
 
 # Byte-compiled / optimized / DLL files
