@@ -1,4 +1,4 @@
-<div align="right">
+<div align="center">
    <a href="https://github.com/voidscuttle/dotfiles/stargazers">
       <img src="https://img.shields.io/github/stars/xAlpharax/neural-art?color=B4F8C8&labelColor=05080A&style=for-the-badge">
    </a>
