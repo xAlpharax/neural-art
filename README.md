@@ -1,3 +1,9 @@
+<div align="right">
+   <a href="https://github.com/voidscuttle/dotfiles/stargazers">
+      <img src="https://img.shields.io/github/stars/xAlpharax/neural-art?color=B4F8C8&labelColor=05080A&style=for-the-badge">
+   </a>
+</div>
+
 # neural-art
 
 Neural Style Transfer done from the CLI using a VGG backbone and presented as an MP4.
