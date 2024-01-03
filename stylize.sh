@@ -38,4 +38,4 @@ python renderer.py --fix
 #ffmpeg -y -framerate 60 -pattern_type glob -i 'Output/neural_art_*.png' -c:v libsvtav1 -pix_fmt yuv420p  -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $(basename ${2%.*})'_in_'$(basename ${1%.*})'.mp4' # AV1 weirddd
 ffmpeg -y -framerate 60 -pattern_type glob -i 'Output/neural_art_*.png' -c:v libvpx-vp9 -pix_fmt yuv420p -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" $(basename ${2%.*})'_in_'$(basename ${1%.*})'.mp4' # VP9 quality
 
-# try -crf 10 (sane for vp9)
+# -crf defaults to 32 which is ok for vp9, change it to be lower with the -crf flag if you *really* need that higher fidelity and bigger filesize, i found it to be unnecessary
