@@ -1,7 +1,7 @@
 <div align="center">
-   <a href="https://github.com/voidscuttle/dotfiles/stargazers">
-      <img src="https://img.shields.io/github/stars/xAlpharax/neural-art?color=B4F8C8&labelColor=05080A&style=for-the-badge">
-   </a>
+    <a href="https://github.com/xAlpharax/neural-art/stargazers">
+        <img src="https://img.shields.io/github/stars/xAlpharax/neural-art?color=B4F8C8&labelColor=05080A&style=for-the-badge">
+    </a>
 </div>
 
 # neural-art
@@ -16,7 +16,7 @@ More in depth information about Neural Style Transfer ( NST ) can be found in th
 
 Because Style Transfer hasn't changed drastically in terms of actual results in the past years. I personally find a certain beauty in inputting a style and content image rather than a well curated prompt with a dozen of switches. Consider this repo as a quick and simple ***just works*** solution that can run on both CPU and GPU effectively.
 
-I developed this tool as a means to obtain fancy images and visuals for me and my friends. It somehow grew into something bigger that is actually usable, so much so that I got to integrate it in a workflow in conjunction with [Stable Diffusion](https://github.com/CompVis/stable-diffusion) ( see also [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui) ) which I want to develop a plugin for.
+I developed this tool as a means to obtain fancy images and visuals for me and my friends. It somehow grew into something bigger that is actually usable, so much so that I got to integrate it in a workflow in conjunction with [Stable Diffusion](https://github.com/CompVis/stable-diffusion) ( see also [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui) ) which I want to develop a plugin for in the near future.
 
 ## Requirements
 
